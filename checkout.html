@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Furni Free Bootstrap 5 Template</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <!-- tiny-slider -->
+    <link rel="stylesheet" href="tiny-slider/tiny-slider.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- ~~~ Start Navigation ~~~ -->
+     <nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" aria-label="Furni navigation bar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Furni<span>.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarToggle" aria-axpanded="false" aria-label="toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="active"><a href="index.html" class="nav-link">home</a></li>
+                    <li><a href="shop.html" class="nav-link">shop</a></li>
+                    <li><a href="about.html" class="nav-link">about us</a></li>
+                    <li><a href="service.html" class="nav-link">services</a></li>
+                    <li><a href="blog.html" class="nav-link">blog</a></li>
+                    <li><a href="contact.html" class="nav-link">contact us</a></li>
+                </ul>
+                <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+                    <li><a href="#" class="nav-link"><img src="images/user.svg" alt=""></a></li>
+                    <li><a href="cart.html" class="nav-link"><img src="images/cart.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+     </nav>
+    <!-- ~~~ End Navigation ~~~ -->
+
+    <!-- ~~~ Hero Start ~~~ -->
+     <div class="hero cart-hero">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-5">
+                    <h1>Checkout</h1>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- ~~~ Hero End ~~~ -->
+
+    <!-- ~~~ Checkout Start ~~~ -->
+     <div class="checkout py-5">
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <div class="border rounded p-4 " role="alert">
+                        Returning customer? <a href="#">Click here</a> to login
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-5 mb-md-0">
+                    <h2 class="text-dark mb-3">Billing Details</h2>
+                    <div class="p-3 p-lg-5 border bg-white">
+                        <div class="form-group">
+                            <label for="c-country" class="text-dark">Country <span class="text-danger">*</span></label>
+                            <select name="" id="c-country" class="form-control">
+                                <option value="1" selected>Select a Country</option>
+                                <option value="2">bangladesh</option>    
+		                        <option value="3">Algeria</option>    
+		                        <option value="4">Afghanistan</option>    
+		                        <option value="5">Ghana</option>    
+		                        <option value="6">Albania</option>    
+		                        <option value="7">Bahrain</option>    
+		                        <option value="8">Colombia</option>    
+		                        <option value="9">Dominican Republic</option>    
+                            </select>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="f-name" class="text-dark">First Name <span class="text-danger">*</span></label>
+                                <input type="text" id="f-name" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="l-name" class="text-dark">Last Name <span class="text-danger">*</span></label>
+                                <input type="text" id="l-name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <label for="company-name" class="text-dark">Company Name <span class="text-danger">*</span></label>
+                                <input type="text" id="company-name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <label for="Address" class="text-dark">Address <span class="text-danger">*</span></label>
+                                <input type="text" id="Address" class="form-control">
+                                <input type="text" class="form-control mt-3" placeholder="Apartment, suit, unit etc.(optional)">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="s-and-c" class="text-dark">State / Country <span class="text-danger">*</span></label>
+                                <input type="text" id="s-and-c" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="post-zip" class="text-dark">Posta / Zip <span class="text-danger">*</span></label>
+                                <input type="text" id="post-zip" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row mb-5">
+                            <div class="col-md-6">
+                                <label for="email" class="text-dark">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" id="email" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="text-dark">Phone <span class="text-danger">*</span></label>
+                                <input type="text" id="phone" class="form-control" placeholder="Phone Number">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="c_create_account" class="text-dark" data-bs-toggle="collapse" href="#create_an_account" role="button" aria-expanded="false" aria-controls="create_an_account">
+                                <input type="checkbox" value="1" name="" id="c_create_account"> Creat An Account?
+                            </label>
+                            <div class="collapse" id="create_an_account">
+                                <div class="py-2 mb-4">
+                                    <p class="mb-3">Create an account by entering the information below. If you are a returning customer please login at the top of the page.</p>
+                                    <div class="form-group">
+                                        <label for="c_account-pass" class="text-dark">Account Password</label>
+                                        <input type="text" class="form-control" id="c_account-pass" name="c_account-pass" placeholder="Password">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="c_ship_different_address" class="text-dark" data-bs-toggle="collapse" href="#ship_different_address" role="button" aria-expanded="false" aria-controls="ship_different_address">
+                                <input type="checkbox" name="" value="1" id="c_ship_different_address"> Ship To A Different Address?
+                            </label>
+                            <div class="collapse" id="ship_different_address">
+                                <div class="py-2">
+                                    <div class="form-group">
+                                        <label for="c-country" class="text-dark">Country <span class="text-danger">*</span></label>
+                                        <select name="" id="c-country" class="form-control">
+                                            <option value="1" selected>Select a Country</option>
+                                            <option value="2">bangladesh</option>    
+                                            <option value="3">Algeria</option>    
+                                            <option value="4">Afghanistan</option>    
+                                            <option value="5">Ghana</option>    
+                                            <option value="6">Albania</option>    
+                                            <option value="7">Bahrain</option>    
+                                            <option value="8">Colombia</option>    
+                                            <option value="9">Dominican Republic</option>    
+                                        </select>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-6">
+                                            <label for="f-name" class="text-dark">First Name <span class="text-danger">*</span></label>
+                                            <input type="text" id="f-name" class="form-control">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="l-name" class="text-dark">Last Name <span class="text-danger">*</span></label>
+                                            <input type="text" id="l-name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-12">
+                                            <label for="company-name" class="text-dark">Company Name <span class="text-danger">*</span></label>
+                                            <input type="text" id="company-name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-12">
+                                            <label for="Address" class="text-dark">Address <span class="text-danger">*</span></label>
+                                            <input type="text" id="Address" class="form-control">
+                                            <input type="text" class="form-control mt-3" placeholder="Apartment, suit, unit etc.(optional)">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-6">
+                                            <label for="s-and-c" class="text-dark">State / Country <span class="text-danger">*</span></label>
+                                            <input type="text" id="s-and-c" class="form-control">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="post-zip" class="text-dark">Posta / Zip <span class="text-danger">*</span></label>
+                                            <input type="text" id="post-zip" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-5">
+                                        <div class="col-md-6">
+                                            <label for="email" class="text-dark">Email Address <span class="text-danger">*</span></label>
+                                            <input type="email" id="email" class="form-control">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="phone" class="text-dark">Phone <span class="text-danger">*</span></label>
+                                            <input type="text" id="phone" class="form-control" placeholder="Phone Number">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="c_order_notes" class="text-black">Order Notes</label>
+                            <textarea name="c_order_notes" id="c_order_notes" cols="30" rows="5" class="form-control" placeholder="Write your notes here..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="row mb-5">
+                        <div class="col-md-12">
+                            <h2 class="text-black mb-3">Coupon Code</h2>
+                            <div class="p-3 p-lg-5 border bg-white">
+                                <label for="c_code" class="text-dark mb-3">Enter your coupon code if you have one</label>
+                                <div class="input-group w-75 couponcode-wrap">
+                                    <input type="text" class="form-control rounded me-2" placeholder="Coupon Code" id="c_code" aria-label="Coupon Code" aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-black btn-sm" type="button" id="button-addon2">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-5">
+                        <div class="col-md-12">
+                            <h2 class="text-black mb-3">Your Order</h2>
+                            <div class="p-3 p-lg-5 border bg-white">
+                                <table class="table site-block-order-table mb-5">
+                                    <thead>
+                                        <th>Product</th>
+                                        <th>Total</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Top Up T-Shirt <strong class="mx-2">x</strong> 1</td>
+		                                    <td>$250.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Polo Shirt <strong class="mx-2">x</strong>   1</td>
+                                            <td>$100.00</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-black font-weight-bold"><strong>Cart Subtotal</strong></td>
+                                            <td class="text-black">$350.00</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="text-black font-weight-bold"><strong>Order Total</strong></td>
+                                            <td class="text-black font-weight-bold"><strong>$350.00</strong></td>
+                                          </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="border p-3 mb-3 rounded">
+                                    <h5 class="mb-0">
+                                        <a href="#collapsebank" class="d-block" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapsebank">Direct Bank Transfer</a>
+                                    </h5>
+
+                                    <div class="collapse" id="collapsebank">
+                                        <div class="py-2">
+                                            <p class="mb-0">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border p-3 mb-3 rounded">
+                                    <h5 class="mb-0">
+                                        <a href="#collapsecheque" class="d-block" data-bs-toggle="collapse" aria-expanded="false" role="button" aria-controls="">Cheque Payment</a>
+                                    </h5>
+
+                                    <div class="collapse" id="collapsecheque">
+                                        <div class="py-2">
+                                            <p class="mb-0">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border p-3 mb-3 rounded">
+                                    <h5 class="mb-0">
+                                        <a href="#collapsepayment" class="d-block" data-bs-toggle="collapse" aria-expanded="false" role="button" aria-controls="">Cheque Payment</a>
+                                    </h5>
+
+                                    <div class="collapse" id="collapsepayment">
+                                        <div class="py-2">
+                                            <p class="mb-0">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group mt-5">
+                                    <button class="btn btn-black btn-lg py-3 btn-block" onclick="window.location='thankyou.html'">Place Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- ~~~ Checkout Start ~~~ -->
+
+
+    <!-- ~~~ Footer Section Start ~~~ -->
+     <footer class="footer-section bg-white py-5 mt-5">
+        <div class="container relative py-5">
+            <div class="sofa-img">
+                <img src="images/sofa.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="subscription-form">
+                        <h5><i class="fa fa-envelope me-2"></i>Subscribe to Newsletter</h5>
+
+                        <form class="row g-3" action="">
+                            <div class="col-auto">
+                                <input type="text" class="form-control p-2 rounded-3 border-dark" placeholder="Enter your name">
+                            </div>
+                            <div class="col-auto">
+                                <input type="email" class="form-control p-2 rounded-3 border-dark" placeholder="Enter your email">
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-primary py-2 px-4 rounded-3 border-dark">
+                                    <span class="fa fa-paper-plane"></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5 my-4">
+                <div class="col-lg-4">
+                    <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Furni<span>.</span></a></div>
+						<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant</p>
+
+					<ul class="list-unstyled custom-social">
+						<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+						<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
+						<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+						<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+					</ul>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row links-wrap">
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Knowledge base</a></li>
+                                <li><a href="#">Live chat</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">Our team</a></li>
+                                <li><a href="#">Leadership</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="col-6 col-sm-6 col-md-3">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Nordic Chair</a></li>
+                                <li><a href="#">Kruzo Aero</a></li>
+                                <li><a href="#">Ergonomic Chair</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top copyright">
+                <div class="row pt-4">
+                    <div class="col-lg-6">
+                        <p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by Neamul  <!-- License information: https://untree.co/license/ --></p>
+                    </div>
+
+                    <div class="col-lg-6 text-center text-lg-end">
+                        <ul class="list-unstyled d-inline-flex ms-auto">
+                            <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+     </footer>
+    <!-- ~~~ Footer Section End ~~~ -->
+
+
+    <!-- ~~~~~FONT AWESOME~~~~~ -->
+    <script src="https://kit.fontawesome.com/9ad7beacbb.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Tiny-slider -->
+    <script src="tiny-slider/tiny-slider.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
